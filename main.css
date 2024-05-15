@@ -1,0 +1,239 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+
+
+/* header */
+.header{
+  width: 100%;
+  background-color: #272829;
+  display: flex;
+  color: white;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  position: relative;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+}
+
+.logo a{
+  display: flex;
+  color: white;
+}
+
+.logo p{
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.logo span{
+  font-size: 40px;
+  color: #f5b61b;
+  font-weight: bolder;
+}
+
+.search input{
+  padding: 10px;
+  border: none;
+}
+
+.search button{
+  background-color: #f5b61b;
+  padding: 10px;
+  border: none;
+}
+
+.cart{
+  color: white;
+}
+
+.cart{
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 15px;
+}
+
+.cart span{
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #f5b61b;
+  color: #272829;
+  width: 20px;
+  height: 20px;
+  font-size: 18px;
+  border-radius: 100%;
+  text-align: center;
+}
+
+a{
+  color: white;
+}
+
+.itemBlock{
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 42%;
+  width: 20%;
+  min-height: 100px;
+  background-color: white;
+  color: black;
+  border-radius: 15px;
+  padding: 10px;
+  border: 1px solid black;
+  box-shadow: 3px 3px 3px lightgray;
+}
+
+.searchItem{
+  cursor: pointer;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.searchItem img{
+  width: 15%;
+}
+
+@media (max-width: 768px) {
+  .logo{
+      display: none;
+  }
+
+  .itemBlock{
+      width: 80%;
+      left: 5%;
+  }
+}
+
+/* subheader */
+.subHeader{
+  background-color: #61677A;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+  height: 40px;
+}
+
+.subHeader p{
+  word-spacing: 20px; 
+  margin-right: 20px;
+  font-size: 25px;
+  color: white;
+}
+
+.wrapper img{
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+}
+
+.acc{
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 15px;
+}
+
+.wrapper h1{
+  font-size: 50px;
+}
+
+/* Category */
+.wrapper2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* or any other spacing you prefer */
+}
+.item1 {
+  width: calc(25% - 10px); /* adjust this value as per your layout */
+  margin-bottom: 20px; /* spacing between items */
+  text-align: center; /* centers the content inside the item */
+}
+/* .item img {
+  max-width: 100%;
+  height: auto;
+} */
+
+.item1 img {
+  max-width: 100%;
+  height: 125px; /* Set a fixed height for the images */
+  object-fit: cover; /* This will maintain the aspect ratio and crop the image */
+  object-position: bottom; /* This will position the visible part of the image at the bottom */
+}
+.item1 p {
+  font-size: 32px; /* adjust font size as needed */
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: 10px; /* adjust margin to bring text closer to the image */
+}
+/* .wrapper2 img{
+  max-width: 100%;
+  height: 450px;
+  object-fit: cover;
+} */
+
+
+
+
+/* Our Products */
+/* Category */
+.wrapper3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* or any other spacing you prefer */
+}
+.item {
+  width: calc(25% - 10px); /* adjust this value as per your layout */
+  margin-bottom: 20px; /* spacing between items */
+  text-align: center; /* centers the content inside the item */
+}
+/* .item img {
+  max-width: 100%;
+  height: auto;
+} */
+.item img {
+  max-width: 100%;
+  height: 125px; /* Set a fixed height for the images */
+  object-fit: cover; /* This will maintain the aspect ratio and crop the image */
+  object-position: bottom; /* This will position the visible part of the image at the bottom */
+}
+.item p {
+  font-size: 18px; /* adjust font size as needed */
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: 10px; /* adjust margin to bring text closer to the image */
+}
+/* .wrapper2 img{
+  max-width: 100%;
+  height: 450px;
+  object-fit: cover;
+} */
+
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: black;
+}
+
+
+/* Задайте розмір шрифту, який вам потрібен */
+/* input{
+  font-size: 14px; 
+} */

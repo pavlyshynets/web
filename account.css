@@ -1,0 +1,66 @@
+/* сама форма */
+form {
+  border: 3px solid #f1f1f1;
+  /** Повністю широкі введення */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  /** Стилі для усіх кнопок */
+  button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    /** Ефект при наведенні на кнопку */
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  /** Додатковий стиль для кнопки скасування (червоний) */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  /** Текст "Забули пароль" */
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  /** Зміна стилів для маленьких екранів */
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
+  }
+}
+/* Центрування зображення аватара всередині контейнера */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+/* Додавання відступів до контейнерів */
+.container {
+  padding: 16px;
+}
+
+/* У SCSS ми використовуємо вкладеність для представлення ієрархічної структури CSS.
+ Кожен вкладений блок відповідає правилу, вкладеному в його батька. 
+ Крім того, ми можемо використовувати символ & для посилання на батьківський селектор у вкладених блоках. */
