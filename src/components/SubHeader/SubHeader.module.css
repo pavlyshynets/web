@@ -1,0 +1,19 @@
+.subHeader{
+    background-color: #61677A;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+    height: 40px;
+}
+
+.subHeader p{
+    margin-right: 15px;
+    color: white;
+}
+
+.wrapper img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
